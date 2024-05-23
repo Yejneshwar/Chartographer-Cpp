@@ -28,6 +28,8 @@ public:
 
 	static void UpdatePlot(std::string plotId, std::vector<double[2]> points);
 
-	static void UpdatePlot(std::string plotId, std::array<double,3> p1, std::array<double, 3> p2, std::array<double, 3> p3);
+	static void UpdatePlot(std::string plotId, std::array<double,3> p1, std::array<double, 3> p2, std::array<double, 3> p3, std::array<float, 4> color = { 1.0,1.0,1.0,1.0 });
+
+	static void UpdatePlot(std::string plotId, std::array<double, 3> p1, std::array<double, 3> p2, std::array<double, 3> p3, std::array<float, 4> c1, std::array<float, 4> c2, std::array<float, 4> c3);
 
 };
